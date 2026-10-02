@@ -1,0 +1,25 @@
+{
+  "name": "desh-investigation-automation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/public-server.js",
+    "dev": "node --watch index.js",
+    "fetch-news": "node scripts/fetch-news.js",
+    "research-news": "node scripts/research-news.js",
+    "automation": "node scripts/automation.js",
+    "publish-news": "node scripts/publish-news.js",
+    "public": "node scripts/public-server.js",
+    "daily": "node scripts/daily-pipeline.js",
+    "daily:now": "node scripts/daily-pipeline.js --run-now"
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "@mozilla/readability": "^0.6.0",
+    "dotenv": "^18.0.4",
+    "express": "^5.1.0",
+    "jsdom": "^30.1.1",
+    "node-cron": "^4.6.0",
+    "rss-parser": "^3.13.0"
+  }
+}

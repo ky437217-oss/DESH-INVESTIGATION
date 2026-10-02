@@ -1,0 +1,64 @@
+﻿node_modules/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+
+# Backups
+*.backup
+*.backup.*
+*.backup-*
+*.before-*
+*-backup.*
+*-backup
+*.bak
+*.old
+
+# Local/editor
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Private/local editorial data
+data/daily-pipeline.log
+data/news.json
+data/researched-news.json
+data/research-failed.json
+data/review-queue.json
+data/verification-results.json
+data/verified-news.json
+data/human-review-report.json
+data/research-quality-report-final.json
+data/research-quality-report-v2.json
+data/research-quality-report.json
+data/publish-audit.json
+
+# Data backups
+data/*before-*
+data/*backup*
+data/*.bak
+data/*.old
+
+# Local automation
+run-daily-pipeline.cmd
+
+# Recovery/development files
+fix-hindi.js
+recover-research.js
+repair-json.js
+repair-static-hindi.js
+test-gemini.js
+schema.sql
+index.js
+server/
+
+# Other local scripts
+scripts/*
+!scripts/public-server.js
+!scripts/assets/
