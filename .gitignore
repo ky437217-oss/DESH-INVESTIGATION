@@ -62,3 +62,9 @@ server/
 scripts/*
 !scripts/public-server.js
 !scripts/assets/
+
+# Cloudflare generated assets
+public/
+
+!public/
+!public/internal-news.js
